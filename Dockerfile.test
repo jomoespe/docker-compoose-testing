@@ -1,0 +1,9 @@
+FROM java:8
+
+MAINTAINER José Moreno
+LABEL Description="Contenedor con los test para el  ejemplo de acceptance test con Docker" 
+LABEL Version="1.0"
+
+
+ADD ./resources/test.sh  ~/
+ENTRYPOINT ["bash", "~/test.sh"]
