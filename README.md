@@ -12,8 +12,8 @@ Be able to execute a container that execute tests to other container and chech t
 
 There are two containers:
 
-  - the **application** container have a very simple rest application
-  - the **test** container hace a script that call the application URl and check responses to verify the *application* behavour.
+  - the **application** container has a very simple rest application
+  - the **test** container has a shell script that call the application URl and check responses to verify the *application* behavour.
 
 The **application** responds to **http://<container ip or name>:8080/hi[?name=a_name]** and responses with a *text/plain* response 
 with content **hello <<unknown> | *a_name*>**. Example:
